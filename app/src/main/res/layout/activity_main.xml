@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:backgroundTint="?attr/colorOnPrimary">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?attr/colorPrimary">
+
+        <Button
+                android:id="@+id/downloadAll"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:fabSize="auto"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                app:backgroundTint="#02D648"
+                app:cornerRadius="10dp"
+                android:text="Download All"
+                android:textColor="?attr/colorOnSecondary"
+                android:textSize="14sp"
+                app:rippleColor="#25D366"
+                android:backgroundTint="?attr/colorAccent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:id="@+id/recyclerView"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="40dp" />
+</RelativeLayout>
